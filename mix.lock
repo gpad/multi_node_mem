@@ -1,0 +1,1 @@
+%{"mem": {:git, "https://github.com/gpad/mem.git", "06095ca221436cc6efbff20a2fc90b8ff5c10d54", [branch: "multinode"]}}
