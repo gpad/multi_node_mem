@@ -6,7 +6,8 @@ defmodule MultiNodeMem.Cache.Supervisor do
   end
 
   def init([]) do
-    [ MultiNodeMem.Cache.child_spec,
+    nodes = [:"e1@tardis", :"e2@tardis"]
+    [ MultiNodeMem.Cache.child_spec(nodes),
     ] |> supervise(strategy: :one_for_one)
   end
 
